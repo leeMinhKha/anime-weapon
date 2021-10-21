@@ -1,0 +1,103 @@
+.contact {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  }
+  
+.contact .leftSide {
+  position: absolute;
+  width: 50%;
+  left: 30px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s ease-in-out;
+  -webkit-animation: spin 8s linear infinite;
+  -moz-animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin{
+  100%{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.contact .rightSide{
+  position: absolute;
+  width: 30%;
+  left: 70%;
+  top: 50%;
+  height: 60%;
+  object-fit: cover;
+  transform: translate(-50% , -50%);
+}
+  
+.contact .rightSide form .fields{
+  display: flex;
+}
+
+.contact .rightSide form .field,
+.contact .rightSide form .fields .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .rightSide form .textarea{
+  height: 80px;
+  width: 100%;
+}
+
+.contact .rightSide form .name{
+  margin-right: 10px;
+}
+
+.contact .rightSide form .email{
+  margin-right: 10px;
+}
+
+.contact .rightSide form .field input,
+.contact .rightSide form .textarea textarea
+{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius:6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins' , sans-serif;
+}
+
+.contact .rightSide form .textarea  textarea{
+  padding-top: 10px;
+  resize: none;
+}
+
+.contact .rightSide form .button{
+  height: 47px;
+  width: 170px;
+}
+
+.contact .rightSide form .button button{
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(70, 70, 235);
+  background: rgb(70, 70, 235);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact .rightSide form .button button:hover{
+  color:rgb(70, 70, 235);
+  background: none;
+}
